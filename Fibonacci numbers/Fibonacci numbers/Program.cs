@@ -32,16 +32,14 @@ namespace Fibonacci_numbers
         public static void fibonacciNum()
         {
             int insernum = insertNum();
-            ulong prevnum = 0, nextnum = 1;
-            ulong finalnum = 0;
+            double prevnum = 0, nextnum = 1, finalnum = 0;
             for (int i=1;i <= insernum; i++)
             {
                 finalnum = prevnum + nextnum;
                 prevnum = nextnum;
                 nextnum = finalnum;
-
-                Console.WriteLine(i+" "+finalnum);
             }
+            Console.WriteLine("Your fibonacci number: " + finalnum);
         }
     }
 }
